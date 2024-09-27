@@ -1,3 +1,4 @@
+import logging
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from langchain_community.vectorstores import Chroma
@@ -20,6 +21,9 @@ Answer the question based on the above context: {question}
 app = Flask(__name__)
 CORS(app)
 
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+
 @app.route('/answer', methods=['POST'])
 def answer():
     data = request.get_json()
@@ -32,6 +36,7 @@ def answer():
         response_text = query_rag(query_text)
         return jsonify({"response": response_text})
     except Exception as e:
+        app.logger.error("Error occurred: %s", str(e))
         return jsonify({"error": str(e)}), 500
 
 def query_rag(query_text: str):
