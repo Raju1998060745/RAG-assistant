@@ -66,7 +66,6 @@ def add_to_chroma(chunks: list[Document]):
         print("✅ No new documents to add")
 
 def calculate_chunk_ids(chunks):
-    # This will create IDs like "data/monopoly.pdf:6:2"
     # Page Source : Page Number : Chunk Index
 
     last_page_id = None
