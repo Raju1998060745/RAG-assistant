@@ -12,8 +12,9 @@ This project is a Retrieval-Augmented Generation (RAG) agent designed to answer 
 
 1. Clone the repository.
 2. Set up the virtual environment in `.venv`.
-3. Run `populate_database.py` to prepare the database.
-4. Use `app.py` to start the agent.
+3. add files in the data folder.
+4. Run `populate_database.py` to prepare the database.
+5. Use `app.py` to start the agent.
 
 ## Usage
 
@@ -24,7 +25,7 @@ Run `app.py` to start the server and begin querying.
 - Python
 - Chroma
 - Embedding APIs
+- Ollama
+- langChain
+- Flask
 
-## Status
-
-This project is under development.
