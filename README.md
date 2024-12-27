@@ -1,6 +1,6 @@
-# RAG Agent for MyPortfolio
+# RAG Agent
 
-This project is a Retrieval-Augmented Generation (RAG) agent designed to answer questions about the portfolio owner. It utilizes embedding functions and a database to retrieve and generate accurate responses. This is currently a work in progress.
+This project is a Retrieval-Augmented Generation (RAG) agent designed to answer questions about the owner. It utilizes embedding functions and a database to retrieve and generate accurate responses. This is currently a work in progress.
 
 ## Features
 
